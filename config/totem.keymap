@@ -11,42 +11,42 @@
 
     BASE {
       bindings = <&kp LBKT>;
-      key - positions = <6 7>;
+      key-positions = <6 7>;
     };
 
     BASE {
       bindings = <&kp RBKT>;
-      key - positions = <7 8>;
+      key-positions = <7 8>;
     };
 
     BASE {
       bindings = <&kp SEMI>;
-      key - positions = <26 27>;
+      key-positions = <26 27>;
     };
 
     BASE {
       bindings = <&kp BSLH>;
-      key - positions = <27 28>;
+      key-positions = <27 28>;
     };
 
     EXTRA {
       bindings = <&kp LBKT>;
-      key - positions = <6 7>;
+      key-positions = <6 7>;
     };
 
     EXTRA {
       bindings = <&kp RBKT>;
-      key - positions = <7 8>;
+      key-positions = <7 8>;
     };
 
     EXTRA {
       bindings = <&kp SEMI>;
-      key - positions = <26 27>;
+      key-positions = <26 27>;
     };
 
     EXTRA {
       bindings = <&kp BSLH>;
-      key - positions = <27 28>;
+      key-positions = <27 28>;
     };
   };
 };
