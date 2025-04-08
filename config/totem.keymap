@@ -5,35 +5,68 @@
 #include "../miryoku/mapping/38/totem.h"
 #include "../miryoku/miryoku.dtsi"
 
-compatible = "zmk,combos";
+/ {
+  combos {
+    compatible = "zmk,combos";
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
-  combo_##NAME { \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYERS>; \
+    combo_q {
+      key-positions = <1 2>;
+      bindings = <&kp Q>;
+      layers = <U_BASE U_EXTRA>;
+    };
+
+    combo_base_b {
+      key-positions = <2 3>;
+      bindings = <&kp B>;
+      layers = <U_BASE>;
+    };
+
+    combo_extra_t {
+      key-positions = <2 3>;
+      bindings = <&kp T>;
+      layers = <U_EXTRA>;
+    };
+
+    combo_z {
+      key-positions = <22 23>;
+      bindings = <&kp Z>;
+      layers = <U_BASE U_EXTRA>;
+    };
+
+    combo_base_v {
+      key-positions = <23 24>;
+      bindings = <&kp V>;
+      layers = <U_BASE>;
+    };
+
+    combo_extra_b {
+      key-positions = <23 24>;
+      bindings = <&kp B>;
+      layers = <U_EXTRA>;
+    };
+
+    combo_lbkt {
+      key-positions = <6 7>;
+      bindings = <&kp LBKT>;
+      layers = <U_BASE U_EXTRA>;
+    };
+
+    combo_rbkt {
+      key-positions = <7 8>;
+      bindings = <&kp RBKT>;
+      layers = <U_BASE U_EXTRA>;
+    };
+
+    combo_semi {
+      key-positions = <27 28>;
+      bindings = <&kp SEMI>;
+      layers = <U_BASE U_EXTRA>;
+    };
+
+    combo_bslsh {
+      key-positions = <28 29>;
+      bindings = <&kp BSLH>;
+      layers = <U_BASE U_EXTRA>;
+    };
   };
-
-COMBO(base_lbkt, &kp LBKT, 6 7, U_BASE)
-COMBO(extra_lbkt, &kp LBKT, 6 7, U_EXTRA)
-
-COMBO(base_rbkt, &kp RBKT, 7 8, U_BASE)
-COMBO(extra_rbkt, &kp RBKT, 7 8, U_EXTRA)
-
-COMBO(base_semi, &kp SEMI, 27 28, U_BASE)
-COMBO(extra_semi, &kp SEMI, 27 28, U_EXTRA)
-
-COMBO(base_bslh, &kp BSLH, 28 29, U_BASE)
-COMBO(extra_bslh, &kp BSLH, 28 29, U_EXTRA)
-
-COMBO(base_q, &kp Q, 1 2, U_BASE)
-COMBO(extra_q, &kp Q, 1 2, U_EXTRA)
-
-COMBO(base_b, &kp B, 2 3, U_BASE)
-COMBO(extra_t, &kp T, 2 3, U_EXTRA)
-
-COMBO(base_z, &kp Z, 22 23, U_BASE)
-COMBO(extra_z, &kp Z, 22 23, U_EXTRA)
-
-COMBO(base_v, &kp V, 23 24, U_BASE)
-COMBO(extra_b, &kp B, 23 24, U_EXTRA)
+};
