@@ -4,3 +4,36 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/38/totem.h"
 #include "../miryoku/miryoku.dtsi"
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+  };
+
+COMBO(base_lbkt, &kp LBKT, 6 7, U_BASE)
+COMBO(extra_lbkt, &kp LBKT, 6 7, U_EXTRA)
+
+COMBO(base_rbkt, &kp RBKT, 7 8, U_BASE)
+COMBO(extra_rbkt, &kp RBKT, 7 8, U_EXTRA)
+
+COMBO(base_semi, &kp SEMI, 27 28, U_BASE)
+COMBO(extra_semi, &kp SEMI, 27 28, U_EXTRA)
+
+COMBO(base_bslh, &kp BSLH, 28 29, U_BASE)
+COMBO(extra_bslh, &kp BSLH, 28 29, U_EXTRA)
+
+COMBO(base_q, &kp Q, 1 2, U_BASE)
+COMBO(extra_q, &kp Q, 1 2, U_EXTRA)
+
+COMBO(base_b, &kp B, 2 3, U_BASE)
+COMBO(extra_t, &kp T, 2 3, U_EXTRA)
+
+COMBO(base_z, &kp Z, 22 23, U_BASE)
+COMBO(extra_z, &kp Z, 22 23, U_EXTRA)
+
+COMBO(base_v, &kp V, 23 24, U_BASE)
+COMBO(extra_b, &kp B, 23 24, U_EXTRA)
